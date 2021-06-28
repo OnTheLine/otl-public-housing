@@ -4,19 +4,32 @@ Leaflet interactive historical map of public housing projects in metro Hartford 
 ## Sources
 Sanborn Fire Insurance Map from Hartford, 1922-1950, digitized by Library of Congress
 
+Downloaded large files (.jp2), converted to .jpg, and placed in `historical-sources` folder
+
 - West Hartford
-  - Elmwood Acres https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=55
+  - Elmwood Acres (west) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=54
+  - Elmwood Acres (east) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=55
   - Oakwood Acres https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=46
   - South Quaker Terrace (north section) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=44
   - South Quaker Terrace (south section) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=58
 - Hartford
-  - Charter Oak Terrace https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=24
+  - Charter Oak Terrace https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=19
+  - Rice Heights https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=20
+  - Charter Oak Terrace (more) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=24
 
-more to come
+Georectified in Mapwarper
 
-## AllMaps testing
+- Oakwood Acres https://mapwarper.net/maps/tile/57874/{z}/{x}/{y}.png
 
-### Georeferenced in Editor
+## Problems with AllMaps testing as of June 2021
+-  for multi-page IIIF images (such as Sanborn map book pages in the LOC collection), the tool currently leaves in place georeference points from prior pages. In other words, points 1-7 from map page 46 are *still* in the same spot when I try to georeference map page 47. Developer needs to find a way to treat pages from the same IIIF manifest as separate images.
+- also frustrating that once you’ve placed a georeference marker on the screen, there is no way that I can find to delete it.
+
+### Add Library of Congress items IIIF manifest link to Editor
+
+https://www.loc.gov/item/sanborn01132_011/manifest.json
+
+### Georeference in Editor
 https://allmaps.org/editor/#/georeference?url=https%3A%2F%2Fwww.loc.gov%2Fitem%2Fsanborn01132_011%2Fmanifest.json&image=5eYuKJgRqEcMRCzG
 
 ![testing](allmaps-testing.png)
