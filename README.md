@@ -18,7 +18,7 @@ Sanborn Map Company, Insurance Maps of Hartford Connecticut (New York: Sanborn M
 
 ## File structure
 
-- Downloaded large files (.jp2) from LOC, converted to .jpg
+- from LOC download large JPG2000, convert to JPG
 - Georeferenced in https://mapwarper.net, and exported XYZ link and GeoTIFF files
 
 ### West Hartford
@@ -56,44 +56,61 @@ Mosaic of five 1950 West Hartford public housing maps above
 ### Hartford
 Airport Homes
 - NOT yet in Sanborn map: see Brainard Road area, vacated July 1, 1950, so would be Sanborn 1950 vol 2 (not yet available)
+- POSSIBLY cluster of homes in USGS Topographical Map, Hartford South CT, 1944 https://ngmdb.usgs.gov/topoview/viewer/#12/41.6876/-72.6870
+- 1944-hartford-south-usgs.jpg
 
 Bowles Park, state housing
+- should not appear yet in Sanborn 1950
 - Sanborn 1961 page 463 https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
 
 Blue Hills Homes, USHA project?
-- Sanborn 1950 page 425 ???
+- Sanborn 1950 page 425 ??? NOT YET AVAILABLE
 - Sanborn 1961 page 425 (pasted over) https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
 
-Charter Oak Terrace, USHA project
+Charter Oak Terrace ABC, USHA project
 - Sanborn 1950 page 318 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=19
+- https://mapwarper.net/maps/tile/57938/{z}/{x}/{y}.png
+- 1950-318.tif
 - Sanborn 1961 page 318 https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
 
-Charter Oak Terrace Extension, USHA project
+Charter Oak Terrace D and Extension (E South), USHA project
 - Sanborn 1950 page 326 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=24
+- https://mapwarper.net/maps/tile/57941/{z}/{x}/{y}.png
+- 1950-326.tif
 - Sanborn 1961 page 326 https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
 
 Dutch Point Colony, USHA project
-- Sanborn 1950 page 236 ???
+- Sanborn 1950 page 236 ??? NOT YET AVAILABLE
 - Sanborn 1961 page 236 https://github.com/ontheline/otl-sanborn-1961-hartford-vol2
 
-Rice Heights, state housing project
+Rice Heights, state housing project, and Charter Oak Terrace Extension (E North)
 - Sanborn 1950 page 319 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=20
+- https://mapwarper.net/maps/tile/57942/{z}/{x}/{y}.png
+- 1950-319.tif
 - Sanborn 1961 page 319 https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
 
 Westbrook Village, state housing
+- will not appear in 1950
 - Sanborn 1961 page 462 https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
 
 Bellevue Square, USHA project, 1940-41-42
-- Sanborn 1950 ???
+- Sanborn 1950 page 53 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195001/?sp=68
+- Note that page 54 contains three buildings that are duplicated from page 53
+- https://mapwarper.net/maps/tile/57943/{z}/{x}/{y}.png
+- 1950-53.tif
 - Sanborn 1961 page 53 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
 
-Mahoney Village (not shown in 1961 map)
+Mahoney Village
+- will not appear in 1950 or 1961 map
 
 Nelton Court, USHA project
+- Sanborn 1950 page 65 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195001/?sp=80
+- https://mapwarper.net/maps/tile/57944/{z}/{x}/{y}.png
+- 1950-65.tif
 - Sanborn 1961 page 65 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
 
 Stowe Village, Hartford housing authority
-- Sanborn 1950 ???
+- will not appear in Sanborn 1950
 - Sanborn 1961 page 85 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
 - Sanborn 1961 page 86 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
 
@@ -101,7 +118,7 @@ Stowe Village, Hartford housing authority
 - Nelton Court, 1 Feb 1941
 - Dutch Point Colony, 1 March 1941
 - Bellevue Square, 21 July 1941
-- Charter Oak Terrace, 29 Oct 1941
+- Charter Oak Terrace ABD and D, 29 Oct 1941
 - Blue Hills Homes, 31 Aug 1943; vacated 30 June 1955
 - Charter Oak Terrace Extension, 7 January 1944; demolished Dec 1953
 - Airport Homes, 1944?; vacated July 1950
@@ -116,6 +133,16 @@ Stowe Village, Hartford housing authority
 - Mary Shepard Place YEAR? (not shown in 1961 Sanborn map)
 
 Sources on list and dates: Jessica Rivera notes for CT Fair Housing Center, Nov 2011; Hartford Housing Authority site map from web, 2002; both in this GitHub repository.
+
+## East Hartford
+
+Mayberry Village @FavorsWarHome1944
+
+North End Homes @FavorsWarHome1944
+
+## Wethersfield
+
+Westview Homes @FavorsWarHome1944
 
 
 ## Quick Comparison
