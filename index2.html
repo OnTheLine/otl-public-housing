@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Leaflet Preview</title>
+  <title>Index2</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -40,7 +40,7 @@
 	     maxZoom: 19
  }).addTo(map); // adds layer by default
 
-  var sanborn = new L.tileLayer('https://raw.githubusercontent.com/OnTheLine/otl-public-housing/main/tiles/{z}/{x}/{y}.png', {
+  var sanborn = new L.tileLayer('tiles/{z}/{x}/{y}.png', {
       minZoom: 12,
       maxZoom: 18,
       tms: false,
