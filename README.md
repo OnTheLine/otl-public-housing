@@ -2,7 +2,8 @@
 Leaflet interactive historical map of public housing projects in metro Hartford CT
 
 ## testing tile sources
--  https://ontheline.github.io/otl-public-housing/
+- hosted on GitHub Pages https://ontheline.github.io/otl-public-housing/
+- hosted on Trinity Domains https://jackdougherty.domains.trincoll.edu/otl-map-tiles/public-housing/
 
 ## Sources
 US Library of Congress, “Sanborn Fire Insurance Maps Online Checklist,” https://www.loc.gov/rr/geogmap/sanborn/.
