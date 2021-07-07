@@ -2,9 +2,7 @@
 Leaflet interactive historical map of public housing projects in metro Hartford CT
 
 ## testing tile sources
-
-- index using raw.githubuser https://ontheline.github.io/otl-public-housing/index.html
-- index2 using github pages https://ontheline.github.io/otl-public-housing/index2.html
+-  https://ontheline.github.io/otl-public-housing/
 
 ## Sources
 US Library of Congress, “Sanborn Fire Insurance Maps Online Checklist,” https://www.loc.gov/rr/geogmap/sanborn/.
@@ -21,11 +19,11 @@ Sanborn Map Company, Insurance Maps of Hartford Connecticut (New York: Sanborn M
 - https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
 - https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
 
-See also 2011 Jessica Rivera notes, 2002 Hartford Housing Authority map, and 2020 Greenhouse Studios map, all in this repo.
+See also in this repo:
 
-## File structure
-- from LOC download large JPG2000, convert to JPG
-- Georeferenced in https://mapwarper.net, and exported XYZ link and GeoTIFF files
+- 2002 Hartford Housing Authority map
+- 2011 Jessica Rivera notes
+- [2020 UConn Greenhouse Studios map created by James Kolb for Hartford Housing project](https://twitter.com/GreenhouseUConn/status/1281672946734567425), based on Commission on the City Plan, Community Renewal program, 1965
 
 ### West Hartford
 Elmwood Acres (east), labeled USHA Project
@@ -170,7 +168,17 @@ Drum Hill Park @RulesAreRelaxed1944
 ## Quick Comparison
 1950-1961-oakwoodacres-sanborn.png in otl-bookdown/images
 
-## See also
-UConn Greenhouse Studios 2020 visual created by James Kolb for Hartford Housing project [Twitter post](https://twitter.com/GreenhouseUConn/status/1281672946734567425), based on Commission on the City Plan, Community Renewal program, 1965
+## Methods and File Structure
+1. Download large JPG2000 from LOC, convert to JPG
+2. Georeference JPG in https://mapwarper.net, export XYZ link for Leaflet, and export GeoTIFF for long-term preservation
 
-![UConn Greenhouse Studios public housing projects map 2020](2020-greenhouse-studios.jpg)
+OR
+
+2. Add GeoTIFF from Mapwarper as raster layer in QGIS (or skip Mapwarper and georeference directly in QGIS)
+3. Keep QGIS Projection EPSG:4326 (WGS84)
+4. QGIS Processing > Raster Tools to generate XYZ tiles into `tiles` folder
+5. Host folder and Leaflet code in repo using GitHub Pages, or choose another server. see Leaflet code in `index.html` or use either URL to this map tile layer on GitHub:
+  - https://ontheline.github.io/otl-public-housing/tiles/{z}/{x}/{y}.png
+  - https://raw.githubusercontent.com/OnTheLine/otl-public-housing/main/tiles/{z}/{x}/{y}.png
+
+![generate XYZ tiles](qgis-xyz-tiles.png)
