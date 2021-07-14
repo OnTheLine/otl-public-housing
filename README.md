@@ -23,6 +23,12 @@ Sanborn Map Company, Insurance Maps of Hartford Connecticut (New York: Sanborn M
 - https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
 - https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
 
+US Geological Survey, TopoView map viewer, https://ngmdb.usgs.gov/topoview/, GeoTIFF format (but unclear if relevant housing projects will appear in 1942 surveys, and if so, how to properly import into QGIS).
+
+- 1944 Manchester CT
+- 1944 Hartford South, CT
+- 1945 Hartford North, CT
+
 See also in this repo:
 
 - 2002 Hartford Housing Authority map
