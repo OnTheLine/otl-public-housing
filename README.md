@@ -40,13 +40,13 @@ Elmwood Acres (east), labeled USHA Project
 - on Sanborn 1950 page 353 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=55
 - https://mapwarper.net/maps/tile/57925/{z}/{x}/{y}.png
 - 1950-353.tif
-- on Sanborn 1961 page 353 (pasted over)
+- on Sanborn 1961 page 353 (text pasted over, same homes)
 
 Elmwood Acres (west), labeled USHA Project
 - on Sanborn 1950 page 352 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=54
 - https://mapwarper.net/maps/tile/57926/{z}/{x}/{y}.png
 - 1950-352.tif
-- on Sanborn 1961 page 352 (pasted over)
+- on Sanborn 1961 page 352 (pasted over, same homes)
 
 Oakwood Acres, labeled as USHA Project Temporary War Housing
 - on Sanborn 1950 page 344 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=46
@@ -69,17 +69,16 @@ Mosaic of five 1950 West Hartford public housing maps above
 
 ### Hartford
 Airport Homes
-- NOT yet in Sanborn map: see Brainard Road area, vacated July 1, 1950, so would be Sanborn 1950 vol 2 (not yet available)
-- POSSIBLY cluster of homes in USGS Topographical Map, Hartford South CT, 1944 https://ngmdb.usgs.gov/topoview/viewer/#12/41.6876/-72.6870
+- NOT in Sanborn 1950 vol 2 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/about?accountid=58 or in Sanborn 1961
+- see cluster of homes near Brainard airport in USGS Topographical Map, Hartford South CT, 1944 https://ngmdb.usgs.gov/topoview/viewer/#12/41.6876/-72.6870
 - 1944-hartford-south-usgs.jpg
 
 Bowles Park, state housing
-- should not appear yet in Sanborn 1950
 - Sanborn 1961 page 463 https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
 
-Blue Hills Homes, USHA project?
-- Sanborn 1950 page 425 ??? NOT YET AVAILABLE
-- Sanborn 1961 page 425 (pasted over) https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
+Blue Hills Homes, USHA project
+- Sanborn 1950 page 425 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/browse_maps/7/1131/4913/5197/74757?accountid=58
+- Sanborn 1961 page 425 (same homes, text pasted over) https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
 
 Charter Oak Terrace ABC, labeled USHA project
 - Sanborn 1950 page 318 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=19
@@ -94,17 +93,23 @@ Charter Oak Terrace D and Extension (E South), labeled USHA project
 - Sanborn 1961 page 326 https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
 
 Dutch Point Colony, labeled USHA project
-- Sanborn 1950 page 236 ??? NOT YET AVAILABLE
+- Sanborn 1950 page 236 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/browse_maps/7/1131/4913/5195/74613?accountid=58
 - Sanborn 1961 page 236 https://github.com/ontheline/otl-sanborn-1961-hartford-vol2
 
-Rice Heights, labeled state housing project, and Charter Oak Terrace Extension (E North)
+Rice Heights and Extension, labeled state housing project, and Charter Oak Terrace Extension (E North)
 - Sanborn 1950 page 319 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=20
 - https://mapwarper.net/maps/tile/57942/{z}/{x}/{y}.png
 - 1950-319.tif
-- Sanborn 1961 page 319 https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
+- Sanborn 1961 page 319 (shows Rice Heights Extension) https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
+
+Stonington Street temporary housing
+- Sanborn 1950 page 236 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/browse_maps/7/1131/4913/5195/74613?accountid=58
+- Sanborn 1961 page 236 covered up
+
+Barbour St temporary housing
+- Sanborn 1950 page 85 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/browse_maps/7/1131/4913/5194/74568?accountid=58
 
 Westbrook Village, labeled state housing
-- will not appear in 1950
 - Sanborn 1961 page 462 https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
 
 Bellevue Square, labeled USHA project, 1940-41-42
@@ -113,9 +118,7 @@ Bellevue Square, labeled USHA project, 1940-41-42
 - https://mapwarper.net/maps/tile/57943/{z}/{x}/{y}.png
 - 1950-53.tif
 - Sanborn 1961 page 53 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
-
-Mahoney Village
-- will not appear in 1950 or 1961 map
+- renamed Mary Shepard Place in 2002 HHA map
 
 Nelton Court, labeled USHA project
 - Sanborn 1950 page 65 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195001/?sp=80
@@ -124,9 +127,11 @@ Nelton Court, labeled USHA project
 - Sanborn 1961 page 65 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
 
 Stowe Village, labeled Housing Authority of the City of Hartford (HHA)
-- will not appear in Sanborn 1950
-- Sanborn 1961 page 85 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
-- Sanborn 1961 page 86 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
+- Sanborn 1961 (west) page 85 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
+- Sanborn 1961 (east) page 86 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
+
+Mahoney Village
+- will not appear in 1950 or 1961 map
 
 Smith Towers YEAR?
 - not shown in 1961 Sanborn map; see 2002 HHA map
@@ -137,12 +142,11 @@ Kent Apartments YEAR?
 Betty Knox Apartments YEAR?
 - not shown in 1961 Sanborn map; see 2002 HHA map
 
-Mary Shepard Place YEAR?
-- not shown in 1961 Sanborn map; see 2002 HHA map
+
 
 ## East Hartford
 
-Mayberry Village and extension @FavorsWarHome1944
+Mayberry Village and Extension @FavorsWarHome1944
 
 Pitkin Homes @RulesAreRelaxed1944
 
@@ -150,9 +154,9 @@ United Homes @RulesAreRelaxed1944
 
 Brewer Street Homes @RulesAreRelaxed1944
 
-Norman Homes @RulesAreRelaxed1944
+North End Homes @FavorsWarHome1944 (typo?: Norman Homes @RulesAreRelaxed1944)
 
-North End Homes @FavorsWarHome1944
+Riverside Trailers
 
 ## Wethersfield
 
@@ -162,7 +166,7 @@ Westview Homes @FavorsWarHome1944
 
 ## Glastonbury
 
-Welles Village @RulesAreRelaxed1944
+Welles Village @RulesAreRelaxed1944, NOT in digital Sanborn (most recent year 1939)
 
 ## Manchester
 
