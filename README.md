@@ -143,8 +143,6 @@ Mosaic of five 1950 West Hartford public housing maps above
 ### Betty Knox Apartments YEAR?
 - not shown in 1961 Sanborn map; see 2002 HHA map
 
-
-
 ## East Hartford
 
 Mayberry Village and Extension
@@ -174,24 +172,39 @@ Riverside Trailers
 
 ## Wethersfield
 
-Westfield Heights
+### Westfield Heights
 - page 18 partial Sanborn 1947
+- 130-unit "Westfield Heights has successfully become an integrated part of the Wethersfield community, instead of remaining a "project," said Edward Adams, executive director of the Wethersfield Housing Authority" @ClubHearsAdams1945
 
-Westview Homes @FavorsWarHome1944
-
-## Glastonbury
-
-Welles Village @RulesAreRelaxed1944, NOT in digital Sanborn (most recent year 1939)
-
-## Manchester
-
-Orford Village @RulesAreRelaxed1944
-
-Silver Lane Homes @RulesAreRelaxed1944
+### Highview Homes
+- does not appear in Sanborn 1947, but would be on page 4
+- 14 duplexes for 28 units, probably on Highview Ave, Oxford St, Holbrook Terrace, based on Google Map street view
+- 1948 state bonds approved for 28 units moderate rental housing in Wethersfield @BondApplicationWethersfield1948
+- initially named "Highvue" veteran's development near Wolcott Hill Road and Oxford Street
+- feature story with photos @WethersfieldProjectHas1949
+- listed as "Highview Terrace" 28 units in https://www.cga.ct.gov/2014/rpt/2014-R-0194.htm
+"In 1943 the Westfield Heights housing project was built to provide low-cost housing for those working in the defense industries in the greater Hartford area, and at the end of the war preference was given to returning veterans.  In 1947-48 the Highview housing project was built to provide more homes for veterans.  Both of these projects were built with Federal Public Housing Authority funds." @wiederTwentiethCenturyWethersfield1985
 
 ## Rocky Hill
 
-Drum Hill Park @RulesAreRelaxed1944
+Drum Hill Park
+- supervised by Wethersfield Housing Authority @HousingAuthorityGiven1943
+- page 7 Sanborn 1950 Rocky Hill
+
+## Glastonbury
+
+### Welles Village
+- @RulesAreRelaxed1944, NOT in digital Sanborn (most recent year 1939)
+
+## Manchester
+
+### Orford Village
+- pages 10 and 45 Sanborn 1949 Manchester
+
+### Silver Lane Homes
+- page 45 Sanborn 1949 Manchester
+
+
 
 
 ## Quick Comparison
