@@ -167,7 +167,7 @@ Norman Homes
 - page 30 Sanborn EH 1949 Norman Homes, temporary federal housing, Norman Road and High Ave
 
 Riverside Trailers
-- reportedly never used, but if shown on map, probably around page 4 near Pitkin Homes?
+- reportedly never used, according to @TownWillGet1948, but if shown on map, probably around page 4 near Pitkin Homes?
 
 
 ## Wethersfield
@@ -194,7 +194,11 @@ Drum Hill Park
 ## Glastonbury
 
 ### Welles Village
-- @RulesAreRelaxed1944, NOT in digital Sanborn (most recent year 1939)
+- NOT in digital Sanborn (most recent year 1939)
+- 1946 Glastonbury CT USGS https://ngmdb.usgs.gov/topoview/viewer/#14/41.7018/-72.6013
+- 200 units of single and duplex houses @WarHousingProjects1943; one-third occupied by July 1943 @PurtillManagerProject1943; all but 7 units occupied Sept 1943
+- photo uploaded and story @DeafMuteWar1943; @WarWorkerHousing1943
+- http://www.glastha.org/programs.htm
 
 ## Manchester
 
@@ -204,6 +208,30 @@ Drum Hill Park
 ### Silver Lane Homes
 - page 45 Sanborn 1949 Manchester
 
+## Windsor Locks
+### Elm Plains
+- not visible in 1925-1957 Windsor Locks Sanborn
+- visible in 1946 Windsor Locks USGS (southwest corner of Elm and South Elm, with houses in V formation)
+- seeking clarity about Elm Plains versus Elm Plains extension, and whether one or both were "temporary"
+- 85 units single and duplex homes; built 1942
+- "Soon a cluster of small homes called Elm Plains was built at the intersection of Elm and South Elm streets. What was supposed to be temporary housing still stands, now under the name Elm Corners." @churchLookHistoryBradley2014
+- after 1955 eviction struggle, govt planned to demolish units and nearly all vacated (were these barracks?) @AllThreeVacate1955
+- but 77 tenants in 85 units expressed interest in buying dwellings @ResidentsSlateSurvey1956
+
+
+## Berlin
+
+
+
+## Bristol
+
+### Victory Heights
+- sold to out-of-town speculator around 1955
+
+
+## New Britain and Plainville
+
+### Ledgecrest
 
 
 
@@ -211,13 +239,9 @@ Drum Hill Park
 1950-1961-oakwoodacres-sanborn.png in otl-bookdown/images
 
 ## Methods and File Structure
-1. Download large JPG2000 from LOC, convert to JPG
-2. Georeference JPG in https://mapwarper.net, export XYZ link for Leaflet, and export GeoTIFF for long-term preservation
-
-OR
-
-2. Add GeoTIFF from Mapwarper as raster layer in QGIS (or skip Mapwarper and georeference directly in QGIS)
-3. Keep QGIS Projection EPSG:4326 (WGS84)
+1. Obtain map images: download large JPG2000 from LOC, convert to JPG; or download JPG/PNG from other sources
+2. Georeference image in https://mapwarper.net at default WGS84, export GeoTIFF for long-term preservation, delete item in Mapwarper
+3. Add one or multiple GeoTIFFs as raster layer in QGIS. Keep QGIS Projection EPSG:4326 (WGS84)
 4. QGIS Processing > Raster Tools to generate XYZ tiles into `tiles` folder
 5. Host folder and Leaflet code in repo using GitHub Pages, or choose another server. see Leaflet code in `index.html` or use either URL to this map tile layer on GitHub:
   - https://ontheline.github.io/otl-public-housing/tiles/{z}/{x}/{y}.png
