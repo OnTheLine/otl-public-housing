@@ -146,10 +146,12 @@ Mosaic of five 1950 West Hartford public housing maps above
 ## East Hartford
 
 Mayberry Village and Extension
+- 1940s-mayberry-eh-hausmann.pdf probably from EHHA
 - page 35 Sanborn EH 1949 Mayberry Village and Extension, Cannon Road
 - page 36 Sanborn EH 1949 Mayberry Village (continued)
 
 Pitkin Homes
+- 1940s-pitkin-eh-hausmann.pdf probably from EHHA
 - does not appear in page 4 Sanborn EH 1949, but correct streets appear on page 1 key
 - Streets: Dike Circle, Florence St Ext, Meadow St, Hartland St, Eddison and Hooker St; Source: East Hartford History: A Look Back, public Facebook group, https://x.facebook.com/groups/174504256076803?bac=MTYxNDkxMDM2ODoxNTQ2MjAzNTQ4OTA2ODYwOjE1NDYyMDM1NDg5MDY4NjAsMCwxOjIwOkt3PT0%3D&multi_permalinks
 
@@ -158,16 +160,20 @@ United Homes
 - page 28 Sanborn EH 1949 United Homes (continued) S Main and Ayr, near Coca Cola Bottling
 
 Brewer Street Homes
+- 1940s-brewer-eh-hausmann.pdf probably from EHHA
 - page 30 Sanborn EH 1949 Brewer Street Homes, temporary federal housing, Hamilton Road near Brewer St
 
 North End Homes
+- 1940s-northend-eh-hausmann.pdf probably from EHHA
 - page 40 Sanborn EH 1949 North End Homes federal housing project, Rogers Road and Remington Road
 
 Norman Homes
+- 1940s-norman-eh-hausmann.pdf from EHHA
 - page 30 Sanborn EH 1949 Norman Homes, temporary federal housing, Norman Road and High Ave
 
 Riverside Trailers
-- reportedly never used, according to @TownWillGet1948, but if shown on map, probably around page 4 near Pitkin Homes?
+- 1940s-riversidetrailer-eh-hausmann.pdf, probably from EHHA
+- not on Sanborn 1949, but probably around page 4 near Pitkin Homes?
 
 
 ## Wethersfield
@@ -220,7 +226,7 @@ Drum Hill Park
 
 
 ## Berlin
-
+- no public housing projects in Sanborn 1927-1944 map
 
 
 ## Bristol
@@ -229,9 +235,33 @@ Drum Hill Park
 - sold to out-of-town speculator around 1955
 
 
-## New Britain and Plainville
+## New Britain
 
 ### Ledgecrest
+
+### Mount Pleasant
+
+### Osgood Heights
+
+### Rockland Housing Project
+- Lowell St in 1944; former project by 1966
+- but Lowell St is not visible in
+
+Cecilia Wallace says
+MAY 10, 2020 AT 8:59 PM
+I grew up in the old Rockland Housing Project on Rocky Hill Avenue,(which was built to house the defense workers who came to work at the factories.)
+
+### Sunvale Manor
+
+### White Oaks
+
+
+## Plainville
+
+### East Mountain Terrace
+- probably managed by New Britain Housing Authority
+- not listed in Plainville 1931-1942 Sanborn map
+
 
 
 
