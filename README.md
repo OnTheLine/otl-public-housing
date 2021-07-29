@@ -3,16 +3,13 @@ Leaflet interactive historical map of public housing projects in metro Hartford 
 
 ## testing tiles
 - hosted on GitHub Pages https://ontheline.github.io/otl-public-housing/
-- hosted on Trinity Domains https://jackdougherty.domains.trincoll.edu/otl-map-tiles/public-housing/
-
-- test georaster-layer-for-leaflet https://ontheline.github.io/otl-public-housing/georaster-layer.html
-- learn more https://github.com/GeoTIFF/georaster-layer-for-leaflet
+- OLD-REMOVE hosted on Trinity Domains https://jackdougherty.domains.trincoll.edu/otl-map-tiles/public-housing/
 
 ## Quick Comparison
 1950-1961-oakwoodacres-sanborn.png in otl-bookdown/images
 
 ## Methods and File Structure
-1. Obtain map images: download large JPG2000 from LOC, convert to JPG; or download JPG/PNG from other sources
+1. Obtain map images: download large JPG2000 from LOC, convert to JPG; or download JPG/PNG from other sources. Note that some PNGs from ProQuest Digital Sanborn may need to be converted into a simpler format (JPG?). See Mapwarper warning: "My greyscale image won't work: Try to convert to RGB/Truecolor first and then upload. Often it seems as if images with just one or two bands cause issues"
 2. Georeference image in https://mapwarper.net at default WGS84 (because it's easier than QGIS Georeferencer)
 3. Export uncropped GeoTIFF for long-term preservation
 4. Crop in Mapwarper to focus on public housing project, export cropped GeoTIFF
@@ -40,7 +37,9 @@ Sanborn Map Company, Insurance Maps of Hartford Connecticut (New York: Sanborn M
 - https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
 - https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
 
-US Geological Survey, TopoView map viewer, https://ngmdb.usgs.gov/topoview/, GeoTIFF format (but unclear if relevant housing projects will appear in 1942 surveys, and if so, how to properly import into QGIS).
+ProQuest, “Digital Sanborn Maps, 1867-1970,” https://libguides.ctstatelibrary.org/az.php?q=sanborn (requires CT State Library ID card number)
+
+US Geological Survey, TopoView map viewer, https://ngmdb.usgs.gov/topoview/. Download high-resolution maps in GeoTIFF format and upload to QGIS, transform to WGS84 format, and clip to map extent
 
 - 1944 Manchester CT
 - 1944 Hartford South, CT
@@ -100,13 +99,12 @@ See also in this repo:
 
 ### Blue Hills Homes
 - Sanborn 1950 page 425 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/browse_maps/7/1131/4913/5197/74757?accountid=58
+- 1950-bluehillshomes-425-bw-cropped.tif
 - Sanborn 1961 page 425 (same homes, text pasted over) https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
 
 ### Stonington Street temporary
 - Sanborn 1950 page 236 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/browse_maps/7/1131/4913/5195/74613?accountid=58
-- 1950-dutchpoint-stonington-236-b&w.png
-
-- TODO: Fix problem with georectifying this file. Maybe convert to JPG before uploading?
+- 1950-stonington-236-bw-cropped.tif
 
 - Sanborn 1961 page 236 covered up
 
@@ -284,8 +282,10 @@ I grew up in the old Rockland Housing Project on Rocky Hill Avenue,(which was bu
 ## Major Defense Factories
 
 ### Niles-Bement-Pond Co., Pratt & Whitney Division, West Hartford
-- factory-1950-prattwhitney-wh-366.tif
+- factory-1950-prattwhitney-wh-366-cropped.tif
 
-### Colt in Hartford
+### Colt Industrial Park, Hartford
+- factory-1961-colt-222-cropped.tif
 
 ### Pratt & Whitney Aircraft, East Hartford
+- TODO
