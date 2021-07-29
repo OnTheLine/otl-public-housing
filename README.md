@@ -8,6 +8,23 @@ Leaflet interactive historical map of public housing projects in metro Hartford 
 - test georaster-layer-for-leaflet https://ontheline.github.io/otl-public-housing/georaster-layer.html
 - learn more https://github.com/GeoTIFF/georaster-layer-for-leaflet
 
+## Quick Comparison
+1950-1961-oakwoodacres-sanborn.png in otl-bookdown/images
+
+## Methods and File Structure
+1. Obtain map images: download large JPG2000 from LOC, convert to JPG; or download JPG/PNG from other sources
+2. Georeference image in https://mapwarper.net at default WGS84 (because it's easier than QGIS Georeferencer)
+3. Export uncropped GeoTIFF for long-term preservation
+4. Crop in Mapwarper to focus on public housing project, export cropped GeoTIFF
+5. Delete Mapwarper entry (to avoid using it for long-term preservation)
+6. Add one or multiple GeoTIFFs as raster layer in QGIS. Keep QGIS Projection EPSG:4326 (WGS84)
+7. QGIS Processing > Raster Tools to generate XYZ tiles into `tiles` folder
+8. Host folder and Leaflet code in repo using GitHub Pages, or choose another server. see Leaflet code in `index.html` or use either URL to this map tile layer on GitHub:
+  - https://ontheline.github.io/otl-public-housing/tiles/{z}/{x}/{y}.png
+  - https://raw.githubusercontent.com/OnTheLine/otl-public-housing/main/tiles/{z}/{x}/{y}.png
+
+![generate XYZ tiles](qgis-xyz-tiles.png)
+
 ## Sources
 US Library of Congress, “Sanborn Fire Insurance Maps Online Checklist,” https://www.loc.gov/rr/geogmap/sanborn/.
 
@@ -35,97 +52,72 @@ See also in this repo:
 - 2011 Jessica Rivera notes
 - [2020 UConn Greenhouse Studios map created by James Kolb for Hartford Housing project](https://twitter.com/GreenhouseUConn/status/1281672946734567425), based on Commission on the City Plan, Community Renewal program, 1965
 
-## West Hartford
-
-### Elmwood Acres
-- on Sanborn 1950 page 353 (east) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=55
-- https://mapwarper.net/maps/tile/57925/{z}/{x}/{y}.png
-- 1950-353.tif
-- on Sanborn 1961 page 353 (text pasted over, same homes)
-- on Sanborn 1950 page 352 (west) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=54
-- https://mapwarper.net/maps/tile/57926/{z}/{x}/{y}.png
-- 1950-352.tif
-- on Sanborn 1961 page 352 (pasted over, same homes)
-
-### Oakwood Acres
-- on Sanborn 1950 page 344 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=46
-- https://mapwarper.net/maps/tile/57874/{z}/{x}/{y}.png
-- 1950-344.tif
-- on Sanborn 1961 page 344 (pasted over)
-
-### South Quaker Terrace
-- on Sanborn 1950 page 342 (north) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=44
-- https://mapwarper.net/maps/tile/57923/{z}/{x}/{y}.png
-- 1950-342.tif
-- on Sanborn 1950 page 366 (south) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=58
-- https://mapwarper.net/maps/tile/57924/{z}/{x}/{y}.png
-- 1950-366.tif
-
-Mosaic of five 1950 West Hartford public housing maps above
-- https://mapwarper.net/mosaics/tile/1411/{z}/{x}/{y}.png
+## Public Housing Projects
 
 ## Hartford
 
 ### Airport Homes
-- NOT in Sanborn 1950 vol 2 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/about?accountid=58 or in Sanborn 1961
+- not visible in Sanborn 1950 vol 2 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/about?accountid=58 or in Sanborn 1961
 - see cluster of homes near Brainard airport in USGS Topographical Map, Hartford South CT, 1944 https://ngmdb.usgs.gov/topoview/viewer/#12/41.6876/-72.6870
-- 1944-hartford-south-usgs.jpg
+- downloaded 1944-airport-homes-hartford-south-usgs.tif
+- opened in QGIS, converted to WGS84, and cropped to map extent
+- 1944-airport-homes-usgs-cropped.tif
 
-### Bowles Park
-- Sanborn 1961 page 463 https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
+### Nelton Court
+- Sanborn 1950 page 65 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195001/?sp=80
+- 1950-nelton-court-65-cropped.tif
+- Sanborn 1961 page 65 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
+
+### Bellevue Square
+- Sanborn 1950 page 53 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195001/?sp=68
+- Note that 1950 page 54 contains three buildings that are duplicated from page 53, so only use p. 53
+- 1950-bellevue-53-cropped.tif
+- Sanborn 1961 page 53 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
+- renamed Mary Shepard Place in 2002 HHA map
+
+### Dutch Point Colony
+- Sanborn 1950 page 236 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/browse_maps/7/1131/4913/5195/74613?accountid=58
+- Sanborn 1961 page 236 https://github.com/ontheline/otl-sanborn-1961-hartford-vol2
+- 1961-dutchpoint-236-cropped.tif
+
+### Charter Oak Terrace and Extension
+- Sanborn 1950 page 318 (sections ABC) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=19
+- 1950-charteroak-abc-318-cropped.tif
+- Sanborn 1961 page 318 (sections ABC) https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
+
+- Sanborn 1950 page 326 (section D and Extension south) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=24
+- 1950-charteroak-desouth-326-cropped.tif
+- Sanborn 1961 page 326 https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
+
+- Sanborn 1950 page 319 (Extension north, see also Rice Heights) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=20
+- 1950-charteroak-enorth-319-cropped.tif
+
+### Rice Heights and Extension
+- Sanborn 1950 page 319 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=20
+- 1950-riceheights-319-cropped.tif
+- Note: Cannot easily georectify the tiny north tip with the rest of the map, so omitted from cropped.tif
+- Sanborn 1961 page 319 https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
 
 ### Blue Hills Homes
 - Sanborn 1950 page 425 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/browse_maps/7/1131/4913/5197/74757?accountid=58
 - Sanborn 1961 page 425 (same homes, text pasted over) https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
 
-### Charter Oak Terrace and Extension
-- Sanborn 1950 page 318 (ABC) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=19
-- https://mapwarper.net/maps/tile/57938/{z}/{x}/{y}.png
-- 1950-318.tif
-- Sanborn 1961 page 318 (ABC) https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
-
-- Sanborn 1950 page 326 (D and Extension south) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=24
-- https://mapwarper.net/maps/tile/57941/{z}/{x}/{y}.png
-- 1950-326.tif
-- Sanborn 1961 page 326 https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
-
-- Sanborn 1950 page 319 (Extension north, see also Rice Heights) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=20
-- https://mapwarper.net/maps/tile/57942/{z}/{x}/{y}.png
-- 1950-319.tif
-
-### Dutch Point Colony
-- Sanborn 1950 page 236 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/browse_maps/7/1131/4913/5195/74613?accountid=58
-- Sanborn 1961 page 236 https://github.com/ontheline/otl-sanborn-1961-hartford-vol2
-
-### Rice Heights and Extension
-- Sanborn 1950 page 319 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=20
-- https://mapwarper.net/maps/tile/57942/{z}/{x}/{y}.png
-- 1950-319.tif
-- Sanborn 1961 page 319 (shows Rice Heights Extension) https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
-
 ### Stonington Street temporary
 - Sanborn 1950 page 236 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/browse_maps/7/1131/4913/5195/74613?accountid=58
+- 1950-dutchpoint-stonington-236-b&w.png
+
+- TODO: Fix problem with georectifying this file. Maybe convert to JPG before uploading?
+
 - Sanborn 1961 page 236 covered up
 
 ### Barbour St temporary
 - Sanborn 1950 page 85 https://digitalsanbornmaps-proquest-com.cslib.idm.oclc.org/browse_maps/7/1131/4913/5194/74568?accountid=58
 
+### Bowles Park
+- Sanborn 1961 page 463 https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
+
 ### Westbrook Village
 - Sanborn 1961 page 462 https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
-
-### Bellevue Square
-- Sanborn 1950 page 53 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195001/?sp=68
-- Note that 1950 page 54 contains three buildings that are duplicated from page 53
-- https://mapwarper.net/maps/tile/57943/{z}/{x}/{y}.png
-- 1950-53.tif
-- Sanborn 1961 page 53 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
-- renamed Mary Shepard Place in 2002 HHA map
-
-### Nelton Court
-- Sanborn 1950 page 65 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195001/?sp=80
-- https://mapwarper.net/maps/tile/57944/{z}/{x}/{y}.png
-- 1950-65.tif
-- Sanborn 1961 page 65 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
 
 ### Stowe Village
 - Sanborn 1961 (west) page 85 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
@@ -143,7 +135,32 @@ Mosaic of five 1950 West Hartford public housing maps above
 ### Betty Knox Apartments YEAR?
 - not shown in 1961 Sanborn map; see 2002 HHA map
 
+## West Hartford
+
+### Elmwood Acres
+- on Sanborn 1950 page 353 (east) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=55
+- 1950-elmwoodacres-east-353-cropped.tif
+- on Sanborn 1961 page 353 (text pasted over, same homes)
+
+- on Sanborn 1950 page 352 (west) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=54
+- 1950-elmwoodacres-west-352-cropped.tif
+- on Sanborn 1961 page 352 (pasted over, same homes)
+
+### Oakwood Acres
+- on Sanborn 1950 page 344 https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=46
+- 1950-oakwoodacres-344-cropped.tif
+- on Sanborn 1961 page 344 (pasted over)
+
+### South Quaker Terrace
+- on Sanborn 1950 page 342 (north) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=44
+- 1950-southquakerterrace-north-342.tif
+- on Sanborn 1950 page 366 (south) https://www.loc.gov/resource/g3784hm.g3784hm_g01132195003/?sp=58
+- 1950-southquakerterrace-south-366.tif
+
+
 ## East Hartford
+
+Also: Requested Sanborn 1968 color pages from UConn Archives July 2021
 
 Mayberry Village and Extension
 - 1940s-mayberry-eh-hausmann.pdf probably from EHHA
@@ -177,6 +194,8 @@ Riverside Trailers
 
 
 ## Wethersfield
+
+Also requested Sanborn 1960 color pages from UConn Archives July 2021
 
 ### Westfield Heights
 - page 18 partial Sanborn 1947
@@ -262,19 +281,11 @@ I grew up in the old Rockland Housing Project on Rocky Hill Avenue,(which was bu
 - probably managed by New Britain Housing Authority
 - not listed in Plainville 1931-1942 Sanborn map
 
+## Major Defense Factories
 
+### Niles-Bement-Pond Co., Pratt & Whitney Division, West Hartford
+- factory-1950-prattwhitney-wh-366.tif
 
+### Colt in Hartford
 
-## Quick Comparison
-1950-1961-oakwoodacres-sanborn.png in otl-bookdown/images
-
-## Methods and File Structure
-1. Obtain map images: download large JPG2000 from LOC, convert to JPG; or download JPG/PNG from other sources
-2. Georeference image in https://mapwarper.net at default WGS84, export GeoTIFF for long-term preservation, delete item in Mapwarper
-3. Add one or multiple GeoTIFFs as raster layer in QGIS. Keep QGIS Projection EPSG:4326 (WGS84)
-4. QGIS Processing > Raster Tools to generate XYZ tiles into `tiles` folder
-5. Host folder and Leaflet code in repo using GitHub Pages, or choose another server. see Leaflet code in `index.html` or use either URL to this map tile layer on GitHub:
-  - https://ontheline.github.io/otl-public-housing/tiles/{z}/{x}/{y}.png
-  - https://raw.githubusercontent.com/OnTheLine/otl-public-housing/main/tiles/{z}/{x}/{y}.png
-
-![generate XYZ tiles](qgis-xyz-tiles.png)
+### Pratt & Whitney Aircraft, East Hartford
