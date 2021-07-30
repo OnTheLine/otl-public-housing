@@ -1,55 +1,84 @@
 # otl-public-housing
 Leaflet interactive historical map of public housing projects in metro Hartford CT
 
-## testing tiles
-- hosted on GitHub Pages https://ontheline.github.io/otl-public-housing/
-- OLD-REMOVE hosted on Trinity Domains https://jackdougherty.domains.trincoll.edu/otl-map-tiles/public-housing/
+## Tile layer hosted using GitHub Pages on this repo
+- live map https://ontheline.github.io/otl-public-housing/index.html
+- storymap TO COME
 
-## Quick Comparison
-1950-1961-oakwoodacres-sanborn.png in otl-bookdown/images
+## Data tables
+- 1940s-public-housing-projects-race-hartford-county-ct.csv
+- focus on WWII-era projects, with partial data on post-war projects
+- 1940-census-pre-bellevue-square.csv, to compare racial composition of neighborhood before and after construction of racially segregated public housing project
 
-## Methods and File Structure
+## Map Georeference methods
 1. Obtain map images: download large JPG2000 from LOC, convert to JPG; or download JPG/PNG from other sources. Note that some PNGs from ProQuest Digital Sanborn may need to be converted into a simpler format (JPG?). See Mapwarper warning: "My greyscale image won't work: Try to convert to RGB/Truecolor first and then upload. Often it seems as if images with just one or two bands cause issues"
 2. Georeference image in https://mapwarper.net at default WGS84 (because it's easier than QGIS Georeferencer)
 3. Export uncropped GeoTIFF for long-term preservation
 4. Crop in Mapwarper to focus on public housing project, export cropped GeoTIFF
 5. Delete Mapwarper entry (to avoid using it for long-term preservation)
 6. Add one or multiple GeoTIFFs as raster layer in QGIS. Keep QGIS Projection EPSG:4326 (WGS84)
-7. QGIS Processing > Raster Tools to generate XYZ tiles into `tiles` folder
-8. Host folder and Leaflet code in repo using GitHub Pages, or choose another server. see Leaflet code in `index.html` or use either URL to this map tile layer on GitHub:
+7. QGIS Processing > Raster Tools to generate XYZ tiles into `tiles` folder. Be sure to *scroll all the way down* in the QGIS window to designate output folder.
+8. Host folder and Leaflet code in repo using GitHub Pages, or choose another server.
+9. In the `index.html` file in this repo, see how Leaflet code calls this tile layer URL:
   - https://ontheline.github.io/otl-public-housing/tiles/{z}/{x}/{y}.png
+  - Alternative URL to repo without using GitHub Pages:
   - https://raw.githubusercontent.com/OnTheLine/otl-public-housing/main/tiles/{z}/{x}/{y}.png
 
-![generate XYZ tiles](qgis-xyz-tiles.png)
+![generate XYZ tiles](screenshot-qgis-xyz-tiles.png)
 
-## Sources
+## Map Sources
+Beginning in the 1920s, Sanborn insurance maps were designed to be continuously updated with tissue-paper correction clips that users would paste over existing pages to display changes over time, such as property demolition or new construction. See explanation from Library of Congress: https://guides.loc.gov/fire-insurance-maps/sanborn-interpreting. See example of how Oakwood Acres public housing project in West Hartford appeared on the 1950 map (left) but was torn down in 1954 and removed from the 1961 map (right).
+
+![1950-61 Oakwood Acres comparison](screenshot-1950-1961-sanborn-oakwoodacres.png)
+
+Since Sanborn maps held by libraries reflect different time periods, depending on how long they added correction slips, see date ranges (e.g. 1922-1950 vs. 1922-1961) in the publication years for items below.
+
 US Library of Congress, “Sanborn Fire Insurance Maps Online Checklist,” https://www.loc.gov/rr/geogmap/sanborn/.
 
 - Hartford volume 1, 1922-1950 https://www.loc.gov/item/sanborn01132_009/
-- Hartford volume 2, 1922-1950 https://www.loc.gov/item/sanborn01132_010/ (not yet available as of June 2021).
+- Hartford volume 2, 1922-1950 https://www.loc.gov/item/sanborn01132_010/ (not available online, July 2021).
 - Hartford volume 3, 1923-1950 https://www.loc.gov/item/sanborn01132_011/
-- Hartford volume 4, 1923-1950 https://www.loc.gov/item/sanborn01132_012/ (not yet available as of June 2021).
+- Hartford volume 4, 1923-1950 https://www.loc.gov/item/sanborn01132_012/ (not available online, July 2021).
 
-Sanborn Map Company, Insurance Maps of Hartford Connecticut (New York: Sanborn Map Co, 1922-1961), images digitized from Connecticut State Library, https://cscu-csl-primo.hosted.exlibrisgroup.com/permalink/f/1aj269h/01CSCU_NETWORK_ALMA7176213960003451.
+In July 2021, a Geography & Map Division librarian at LOC kindly forwarded my request to make volumes 2 and 4 available online, since they have the same publication dates as volumes 1 and 3. But the librarian and I were perplexed that the Digital Scanning Team at LOC replied that volumes 2 and 4 had not received copyright clearance and would not be shared online in the near future.
 
-- https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
-- https://github.com/ontheline/otl-sanborn-1961-hartford-vol2
-- https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
-- https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
+Connecticut State Library allowed me to take digital photos of their Sanborn maps, which I hosted on GitHub:
 
-ProQuest, “Digital Sanborn Maps, 1867-1970,” https://libguides.ctstatelibrary.org/az.php?q=sanborn (requires CT State Library ID card number)
+Sanborn Map Company, Insurance Maps of Hartford Connecticut (New York: Sanborn Map Co, 1922-1961), https://cscu-csl-primo.hosted.exlibrisgroup.com/permalink/f/1aj269h/01CSCU_NETWORK_ALMA7176213960003451.
 
-US Geological Survey, TopoView map viewer, https://ngmdb.usgs.gov/topoview/. Download high-resolution maps in GeoTIFF format and upload to QGIS, transform to WGS84 format, and clip to map extent
+- Hartford volume 1, 1922-1961 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
+- Hartford volume 2, 1922-1961 https://github.com/ontheline/otl-sanborn-1961-hartford-vol2
+- Hartford volume 3, 1923-1961 https://github.com/ontheline/otl-sanborn-1961-hartford-vol3
+- Hartford volume 4, 1923-1961 https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
 
-- 1944 Manchester CT
-- 1944 Hartford South, CT
-- 1945 Hartford North, CT
+CT State Library also provides online access (requires CT State library ID card number) to this extension collection of black and white digital Sanborn maps for many cities and towns across Connecticut. Downloaded here for "non-commercial, non-legal use" in an open-access, educational public history website:
 
-See also in this repo:
+ProQuest, “Digital Sanborn Maps, 1867-1970,” https://libguides.ctstatelibrary.org/az.php?q=sanborn
 
-- 2002 Hartford Housing Authority map
-- 2011 Jessica Rivera notes
-- [2020 UConn Greenhouse Studios map created by James Kolb for Hartford Housing project](https://twitter.com/GreenhouseUConn/status/1281672946734567425), based on Commission on the City Plan, Community Renewal program, 1965
+- East Hartford, 1927-1949
+- Manchester, 1926-1949
+- New Britain, 1909-1950
+- Rocky Hill, 1950
+- Wethersfield, 1930-1947
+
+Also, I have requested low-resolution digital images from Sanborn maps held by UConn Archives & Special Collections.
+
+- Wethersfield, 1930-1960 https://uconn-storrs.primo.exlibrisgroup.com/permalink/01UCT_STORRS/1s3ubib/alma9923691953502432
+- East Hartford, 1927-1968 https://uconn-storrs.primo.exlibrisgroup.com/permalink/01UCT_STORRS/1s3ubib/alma9923687763502432
+
+Norm Hausmann, “The Development of Mobilization/Wartime Housing in East Hartford, 1940-1943 and Its Impact on the Town” (Student paper for History 839-25, Central Connecticut State University, archived at East Hartford Public Library, August 1998).
+
+- Digital copy sent by EHPL, includes several housing project planning maps, most likely from the East Hartford Housing Authority files.
+
+US Geological Survey, TopoView map viewer, https://ngmdb.usgs.gov/topoview/. Downloaded high-resolution brown-colored maps in GeoTIFF format, uploaded to QGIS, transformed to WGS84 format, clipped to map extent, and resaved as smaller georectified .tif files.
+
+- 1944 Hartford South USGS (for Airport Homes, not shown in any Sanborn map to my knowledge)
+- not visible in 1925-1957 Windsor Locks Sanborn
+- 1946 Windsor Locks USGS  (TODO for Elm Plains, southwest corner of Elm and South Elm with houses in V formation, not visible in Windsor Locks Sanborn 1925-1957)
+
+
+## Photo Sources (to come)
+
 
 ## Public Housing Projects
 
@@ -289,3 +318,9 @@ I grew up in the old Rockland Housing Project on Rocky Hill Avenue,(which was bu
 
 ### Pratt & Whitney Aircraft, East Hartford
 - TODO
+
+## Additional notes in repo
+
+- 2002 Hartford Housing Authority map
+- 2011 Jessica Rivera notes
+- [2020 UConn Greenhouse Studios map created by James Kolb for Hartford Housing project](https://twitter.com/GreenhouseUConn/status/1281672946734567425), based on Commission on the City Plan, Community Renewal program, 1965
