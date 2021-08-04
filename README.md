@@ -142,13 +142,16 @@ US Geological Survey, TopoView map viewer, https://ngmdb.usgs.gov/topoview/. Dow
 
 ### Bowles Park
 - Sanborn 1961 page 463 https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
+- TODO: georeference for postwar era
 
 ### Westbrook Village
 - Sanborn 1961 page 462 https://github.com/ontheline/otl-sanborn-1961-hartford-vol4
+- TODO: georeference for postwar era
 
 ### Stowe Village
 - Sanborn 1961 (west) page 85 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
 - Sanborn 1961 (east) page 86 https://github.com/ontheline/otl-sanborn-1961-hartford-vol1
+- TODO: georeference for postwar era
 
 ### Mahoney Village
 - will not appear in 1950 or 1961 map
@@ -187,7 +190,7 @@ US Geological Survey, TopoView map viewer, https://ngmdb.usgs.gov/topoview/. Dow
 
 ## East Hartford
 
-Also: Requested Sanborn 1968 color pages from UConn Archives July 2021
+WAITING to georeference EH: Requested Sanborn 1968 color pages from UConn Archives July 2021
 
 Mayberry Village and Extension
 - 1940s-mayberry-eh-hausmann.pdf probably from EHHA
@@ -222,7 +225,7 @@ Riverside Trailers
 
 ## Wethersfield
 
-Also requested Sanborn 1960 color pages from UConn Archives July 2021
+WAITING to georeference: requested Sanborn 1960 color pages from UConn Archives July 2021
 
 ### Westfield Heights
 - page 18 partial Sanborn 1947
